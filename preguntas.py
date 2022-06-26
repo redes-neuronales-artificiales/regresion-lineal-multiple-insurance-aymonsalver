@@ -167,12 +167,12 @@ def pregunta_04():
     # Compute el error cuadratico medio de entrenamiento y prueba. Redondee los
     # valores a dos decimales.
 
-    mse_train = mse(
+    mse_train = mean_squared_error(
         y_train_pred,
         y_train,
     ).round(2)
 
-    mse_test = mse(
+    mse_test = mean_squared_error(
         y_test_pred,
         y_test,
     ).round(2)
