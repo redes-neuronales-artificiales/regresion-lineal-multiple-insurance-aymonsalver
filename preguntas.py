@@ -97,7 +97,6 @@ def pregunta_03():
                 "column_transfomer",
                 make_column_transformer(
                     (
-                        "onehotencoder",
                         OneHotEncoder(),
                         make_column_selector(dtype_include=object),
                     ),
