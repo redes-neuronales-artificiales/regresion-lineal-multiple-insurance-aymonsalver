@@ -95,7 +95,7 @@ def pregunta_03():
             # las variables.
             (
                 "column_transfomer",
-                ColumnTransformer(
+                make_column_transformer(
                     (
                         "onehotencoder",
                         OneHotEncoder(),
