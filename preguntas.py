@@ -10,7 +10,6 @@ selección de las n variables más relevantes usando una prueba f.
 # pylint: disable=unsubscriptable-object
 
 from re import X
-from tkinter.tix import Tree
 import pandas as pd
 
 
@@ -98,7 +97,7 @@ def pregunta_03():
                 "column_transfomer",
                 ColumnTransformer(
                     (
-                        "onehotencoder"
+                        "onehotencoder",
                         OneHotEncoder(),
                         make_column_selector(dtype_include=object),
                     ),
